@@ -1,1 +1,15 @@
 A simple Cocoa view framework for creating real-time and static plots and graphs.
+
+Using SimplePlot is easy. Add the source to your project, treat any of the graphs or
+plots as if they were native Cocoa controls. SimplePlots work like tableViews in that they
+implement the DataSource pattern. Check the implementation for notes on what kind of
+data the plot expects.
+
+Any class that sounds familiar is probably a standalone plot. For example, if SPLineGraphView
+sounds like a view for displaying a Line Graph, then you are absolutely correct.
+
+Any class that sounds unfamiliar is probably a super class used to make SimplePlot extensible
+and organized.  For example, SPCartesianPlotView is a super class that's used in any graphs
+or plots that use XY axes.  These can be extended to create a plot view of your own choosing,
+and do not include the ability to assign a DataSource.
+
