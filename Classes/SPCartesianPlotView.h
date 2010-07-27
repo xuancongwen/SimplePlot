@@ -12,13 +12,17 @@
 
 @interface SPCartesianPlotView : SPView {
     BOOL drawXAxis;
+    NSColor *xAxisColor;
     BOOL drawXTickMarks;
+    NSColor *xTickMarksColor;
     CGFloat yMaxValue;
     CGFloat yMinValue;
 }
 
 @property (nonatomic, assign) BOOL drawXAxis;
+@property (nonatomic, retain) NSColor *xAxisColor;
 @property (nonatomic, assign) BOOL drawXTickMarks;
+@property (nonatomic, retain) NSColor *xTickMarksColor;
 @property (nonatomic, assign) CGFloat yMaxValue;
 @property (nonatomic, assign) CGFloat yMinValue;
 

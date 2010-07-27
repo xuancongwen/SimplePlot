@@ -10,10 +10,14 @@
 
 
 @interface SPView : NSView {
+    NSColor *backgroundColor;
+    NSColor *borderColor;
     BOOL drawBackground;
     BOOL drawBorder;
 }
 
+@property (nonatomic, retain) NSColor *backgroundColor;
+@property (nonatomic, retain) NSColor *borderColor;
 @property (nonatomic, assign) BOOL drawBackground;
 @property (nonatomic, assign) BOOL drawBorder;
 

@@ -16,10 +16,12 @@
 @interface SPLineGraphView : SPCartesianPlotView {
     id <SPLineGraphViewDataSource> dataSource;
 
+    NSColor *color;
     BOOL downSampleGraphToFrame;
 }
 
 @property (nonatomic, assign) IBOutlet id <SPLineGraphViewDataSource> dataSource;
+@property (nonatomic, retain) NSColor *color;
 @property (nonatomic, assign) BOOL downSampleGraphToFrame;
 
 @end

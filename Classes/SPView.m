@@ -11,6 +11,8 @@
 
 @implementation SPView
 
+@synthesize backgroundColor;
+@synthesize borderColor;
 @synthesize drawBackground;
 @synthesize drawBorder;
 
@@ -22,8 +24,10 @@
         return nil;
     }
 
-    self.drawBorder = YES;
-    self.drawBackground = YES;
+    self.backgroundColor = [NSColor blackColor];
+    self.borderColor = [NSColor redColor];
+    drawBorder = YES;
+    drawBackground = YES;
 
     return self;
 }
@@ -40,14 +44,14 @@
     [NSBezierPath setDefaultFlatness:5.0f];
 
     if (self.drawBackground) {
-        [[NSColor blackColor] setFill];
+        [self.backgroundColor setFill];
         NSBezierPath *path = [NSBezierPath bezierPath];
         [path appendBezierPathWithRoundedRect:dirtyRect xRadius:5.0f yRadius:5.0f];
         [path fill];
     }
 
     if (self.drawBorder) {
-        [[NSColor redColor] setStroke];
+        [self.borderColor setStroke];
         NSBezierPath *path = [NSBezierPath bezierPath];
         [path appendBezierPathWithRoundedRect:dirtyRect xRadius:5.0f yRadius:5.0f];
         [path stroke];

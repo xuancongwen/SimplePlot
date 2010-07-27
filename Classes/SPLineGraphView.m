@@ -12,6 +12,7 @@
 @implementation SPLineGraphView
 
 @synthesize dataSource;
+@synthesize color;
 @synthesize downSampleGraphToFrame;
 
 #pragma mark Initialization
@@ -23,6 +24,7 @@
     }
 
     downSampleGraphToFrame = YES;
+    self.color = [NSColor greenColor];
 
     return self;
 }
@@ -38,31 +40,10 @@
 {
     [super drawRect:dirtyRect];
 
-    CGFloat zeroLevel = (-yMinValue) / (yMaxValue - yMinValue) * [self frame].size.height;
-
-    if (self.drawXAxis && zeroLevel > 0.0f) {
-        [[NSColor redColor] setStroke];
-        NSBezierPath *xAxis = [NSBezierPath bezierPath];
-        [xAxis moveToPoint:NSMakePoint(0.0f, zeroLevel)];
-        [xAxis lineToPoint:NSMakePoint([self frame].size.width, zeroLevel)];
-        [xAxis stroke];
-    }
-
-    if (self.drawXTickMarks && zeroLevel > 0.0f && [self frame].size.width > 15.0f) {
-        [[NSColor redColor] setStroke];
-    
-        NSBezierPath *ticks = [NSBezierPath bezierPath];
-        for (int xCoordinate = 0; xCoordinate < [self frame].size.width; xCoordinate += 15) {
-            [ticks moveToPoint:NSMakePoint((CGFloat)xCoordinate, zeroLevel + 5.0f)];
-            [ticks lineToPoint:NSMakePoint((CGFloat)xCoordinate, zeroLevel - 5.0f)];
-        }
-        [ticks stroke];
-    }
-
     NSArray *data = [dataSource evenlySpacedMagnitudesInLineGraphView:self];
 
     if ([data count]) {
-        [[NSColor greenColor] setStroke];
+        [self.color setStroke];
 
         NSBezierPath *graph = [NSBezierPath bezierPath];
 
