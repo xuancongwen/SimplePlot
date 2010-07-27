@@ -278,11 +278,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>35</integer>
+									<integer>7</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 30}, {185, 633}}</string>
+							<string>{{0, 0}, {185, 1033}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,14 +294,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {202, 651}}</string>
+						<string>{{0, 0}, {202, 1051}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>301 166 1152 692 0 0 1920 1178 </string>
+						<string>0 86 1920 1092 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1F0D442111FBC8D80036DDDF</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SPLineGraphView.m</string>
+								<string>SPView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1F0D442211FBC8D80036DDDF</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SPLineGraphView.m</string>
+										<string>SPView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1FCCB53611FE7354002FD33D</string>
+										<string>1FCCB56811FF3D09002FD33D</string>
 										<key>history</key>
 										<array>
 											<string>1FAA5C5511FBD5CC00CF05B6</string>
@@ -341,10 +343,10 @@
 											<string>1FBFD60511FDF8AF000E55F9</string>
 											<string>1FCCB4F211FE6EDE002FD33D</string>
 											<string>1FCCB4F311FE6EDE002FD33D</string>
-											<string>1FCCB4F511FE6EDE002FD33D</string>
-											<string>1FCCB50211FE6F9E002FD33D</string>
 											<string>1FCCB53011FE733F002FD33D</string>
-											<string>1FCCB53111FE733F002FD33D</string>
+											<string>1FCCB53C11FF3A3C002FD33D</string>
+											<string>1FCCB53D11FF3A3C002FD33D</string>
+											<string>1FCCB53E11FF3A3C002FD33D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -358,14 +360,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {945, 646}}</string>
+								<string>{{0, 0}, {1713, 1046}}</string>
 								<key>RubberWindowFrame</key>
-								<string>301 166 1152 692 0 0 1920 1178 </string>
+								<string>0 86 1920 1092 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>646pt</string>
+							<string>1046pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
@@ -437,9 +439,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {945, -27}}</string>
+										<string>{{10, 27}, {1713, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>301 166 1152 692 0 0 1920 1178 </string>
+										<string>0 86 1920 1092 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -448,7 +450,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>945pt</string>
+					<string>1713pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -661,13 +663,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1FCCB53711FE7354002FD33D</string>
 		<string>1FCCB47B11FE54BB002FD33D</string>
 		<string>1FCCB47C11FE54BB002FD33D</string>
 		<string>/Users/xuwen/Workspace/SimplePlot/SimplePlot.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>301 166 1152 692 0 0 1920 1178 </string>
+	<string>0 86 1920 1092 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

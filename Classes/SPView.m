@@ -34,17 +34,22 @@
 {
     [super drawRect:dirtyRect];
 
+    [NSBezierPath setDefaultLineWidth:1.0f];
+    [NSBezierPath setDefaultLineCapStyle:NSRoundLineCapStyle];
+    [NSBezierPath setDefaultLineJoinStyle:NSRoundLineJoinStyle];
+    [NSBezierPath setDefaultFlatness:5.0f];
+
     if (self.drawBackground) {
         [[NSColor blackColor] setFill];
         NSBezierPath *path = [NSBezierPath bezierPath];
-        [path appendBezierPathWithRect:dirtyRect];
+        [path appendBezierPathWithRoundedRect:dirtyRect xRadius:5.0f yRadius:5.0f];
         [path fill];
     }
 
     if (self.drawBorder) {
         [[NSColor redColor] setStroke];
         NSBezierPath *path = [NSBezierPath bezierPath];
-        [path appendBezierPathWithRect:dirtyRect];
+        [path appendBezierPathWithRoundedRect:dirtyRect xRadius:5.0f yRadius:5.0f];
         [path stroke];
     }
 }
