@@ -24,4 +24,6 @@
 
 @protocol SPScatterPlotDataSource
 
+- (NSArray *)pointsInScatterPlotView:(SPScatterPlotView *)scatterPlotView;
+
 @end
