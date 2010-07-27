@@ -7,17 +7,12 @@
 //
 
 #import "SPLineGraphView.h"
-#import "SPView.h"
 
 
 @implementation SPLineGraphView
 
 @synthesize dataSource;
-@synthesize drawXAxis;
-@synthesize drawXTickMarks;
 @synthesize downSampleGraphToFrame;
-@synthesize yMaxValue;
-@synthesize yMinValue;
 
 #pragma mark Initialization
 
@@ -28,10 +23,6 @@
     }
 
     downSampleGraphToFrame = YES;
-    drawXAxis = YES;
-    drawXTickMarks = YES;
-    yMaxValue = 1.0f;
-    yMinValue = -1.0f;
 
     return self;
 }
@@ -67,7 +58,7 @@
         }
         [ticks stroke];
     }
-    
+
     NSArray *data = [dataSource evenlySpacedMagnitudesInLineGraphView:self];
 
     if ([data count]) {
