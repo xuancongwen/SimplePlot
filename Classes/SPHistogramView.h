@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SimplePlot.h"
 
 
 @interface SPHistogramView : SPCartesianPlotView {
