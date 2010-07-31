@@ -14,6 +14,7 @@
 		1FBFD41311FC05E4000E55F9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBFD41211FC05E4000E55F9 /* AudioToolbox.framework */; };
 		1FCCB56B11FF3EE7002FD33D /* SPScatterPlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCB56A11FF3EE7002FD33D /* SPScatterPlotView.m */; };
 		1FCCB57C11FF4040002FD33D /* SPCartesianPlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCB57B11FF4040002FD33D /* SPCartesianPlotView.m */; };
+		1FE2FFEB1203BCA700E93010 /* SPHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2FFEA1203BCA700E93010 /* SPHistogramView.m */; };
 		256AC3DA0F4B6AC300CF3369 /* SimplePlotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* SimplePlotAppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -37,6 +38,8 @@
 		1FCCB56A11FF3EE7002FD33D /* SPScatterPlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPScatterPlotView.m; path = Classes/SPScatterPlotView.m; sourceTree = "<group>"; };
 		1FCCB57A11FF4040002FD33D /* SPCartesianPlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPCartesianPlotView.h; path = Classes/SPCartesianPlotView.h; sourceTree = "<group>"; };
 		1FCCB57B11FF4040002FD33D /* SPCartesianPlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPCartesianPlotView.m; path = Classes/SPCartesianPlotView.m; sourceTree = "<group>"; };
+		1FE2FFE91203BCA700E93010 /* SPHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPHistogramView.h; path = Classes/SPHistogramView.h; sourceTree = "<group>"; };
+		1FE2FFEA1203BCA700E93010 /* SPHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPHistogramView.m; path = Classes/SPHistogramView.m; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* SimplePlotAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePlotAppDelegate.h; path = Classes/SimplePlotAppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* SimplePlotAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimplePlotAppDelegate.m; path = Classes/SimplePlotAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* SimplePlot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePlot_Prefix.pch; path = "Other Sources/SimplePlot_Prefix.pch"; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				1FCCB57A11FF4040002FD33D /* SPCartesianPlotView.h */,
 				1FCCB57B11FF4040002FD33D /* SPCartesianPlotView.m */,
 				1F0D458611FBCE350036DDDF /* SPGlobals.h */,
+				1FE2FFE91203BCA700E93010 /* SPHistogramView.h */,
+				1FE2FFEA1203BCA700E93010 /* SPHistogramView.m */,
 				1F0D458311FBCC840036DDDF /* SPLineGraphView.h */,
 				1F0D458411FBCC840036DDDF /* SPLineGraphView.m */,
 				1FCCB56911FF3EE7002FD33D /* SPScatterPlotView.h */,
@@ -201,6 +206,7 @@
 				1F0D458511FBCC840036DDDF /* SPLineGraphView.m in Sources */,
 				1FCCB56B11FF3EE7002FD33D /* SPScatterPlotView.m in Sources */,
 				1FCCB57C11FF4040002FD33D /* SPCartesianPlotView.m in Sources */,
+				1FE2FFEB1203BCA700E93010 /* SPHistogramView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
