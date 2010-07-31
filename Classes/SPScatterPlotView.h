@@ -15,9 +15,12 @@
 
 @interface SPScatterPlotView : SPCartesianPlotView {
     id <SPScatterPlotDataSource> dataSource;
+
+    NSColor *color;
 }
 
 @property (nonatomic, assign) id <SPScatterPlotDataSource> dataSource;
+@property (nonatomic, retain) NSColor *color;
 
 @end
 

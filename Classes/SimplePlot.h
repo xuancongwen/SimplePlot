@@ -10,3 +10,4 @@
 #import "SPGlobals.h"
 #import "SPView.h"
 #import "SPLineGraphView.h"
+#import "SPScatterPlotView.h"

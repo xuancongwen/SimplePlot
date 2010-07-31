@@ -10,14 +10,17 @@
 #import "SimplePlot.h"
 
 
-@interface SimplePlotAppDelegate : NSObject <NSApplicationDelegate, SPLineGraphViewDataSource> {
+@interface SimplePlotAppDelegate : NSObject <NSApplicationDelegate, SPLineGraphViewDataSource, SPScatterPlotDataSource> {
     NSWindow *window;
     SPLineGraphView *lineGraphView;
+    SPScatterPlotView *scatterPlotView;
 
     NSMutableArray *rawSignalArray;
+    NSMutableArray *scatterData;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet SPLineGraphView *lineGraphView;
+@property (nonatomic, retain) IBOutlet SPScatterPlotView *scatterPlotView;
 
 @end

@@ -21,6 +21,7 @@
 
 @synthesize window;
 @synthesize lineGraphView;
+@synthesize scatterPlotView;
 
 #pragma mark Initialization
 
@@ -31,6 +32,7 @@
     }
 
     rawSignalArray = nil;
+    scatterData = nil;
 
     return self;
 }
@@ -38,6 +40,7 @@
 - (void)dealloc;
 {
     SPDealloc(rawSignalArray);
+    SPDealloc(scatterData);
 
     [super dealloc];
 }
@@ -100,6 +103,12 @@
     self.lineGraphView.yMinValue = -32768.0f;
     self.lineGraphView.downSampleGraphToFrame = NO;
 
+    self.scatterPlotView.xMaxValue = [self.scatterPlotView frame].size.width;
+    self.scatterPlotView.xMinValue = 0.0f;
+    self.scatterPlotView.yMaxValue = 20000.0f;
+    self.scatterPlotView.yMinValue = -20000.0f;
+
+    [self.scatterPlotView setNeedsDisplay:YES];
     [self.lineGraphView setNeedsDisplay:YES];
 }
 
@@ -108,6 +117,23 @@
 - (NSArray *)evenlySpacedMagnitudesInLineGraphView:(SPLineGraphView *)linePlotView;
 {
     return self.rawSignalArray;
+}
+
+#pragma mark SPScatterPlotViewDataSource
+
+- (NSArray *)pointsInScatterPlotView:(SPScatterPlotView *)scatterPlotView;
+{
+    if (!scatterData) {
+        scatterData = [[NSMutableArray alloc] initWithCapacity:0];
+        for (long index = 0; index < 10000; ++index) {
+            CGFloat xCoord = rand() % 2000;
+            CGFloat yCoord = rand() % 400;
+            NSPoint point = NSMakePoint(xCoord, yCoord);
+            [scatterData addObject:[NSValue valueWithPoint:point]];
+        }
+    }
+
+    return scatterData;
 }
 
 @end
