@@ -52,7 +52,7 @@
     if (!rawSignalArray) {
         rawSignalArray = [[NSMutableArray alloc] init];
 
-        NSString *filePath = @"/Users/xuwen/Workspace/SimplePlot/Resources/DemoLineGraph.wav";
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DemoLineGraph" ofType:@"wav"];
         CFURLRef audioFileURL = CFURLCreateFromFileSystemRepresentation(NULL, (const UInt8 *)[filePath UTF8String], strlen([filePath UTF8String]), false);
 
         AudioFileID audioFileID = NULL;
